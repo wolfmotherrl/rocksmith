@@ -19,7 +19,7 @@ class Int40(Construct):
 
 
 ENTRY = Struct(
-    'md5' / String(16),
+    'md5' / PaddedString(16, "utf16"),
     'zindex' / Int32ub,
     'length' / Int40(),
     'offset' / Int40()
